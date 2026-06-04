@@ -304,7 +304,7 @@ function Landing() {
           <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               { Icon: DollarSign, title: "Finanças para barbeiros", desc: "Precificação, lucro e gestão real do dinheiro." },
-              { Icon: TrendingUp, title: "Marketing que gera clientes", desc: "Atração constante de clientes qualificados." },
+              { Icon: TrendingUp, title: "Marketing que gera alunos e clientes", desc: "Atração constante de clientes qualificados." },
               { Icon: Target, title: "Posicionamento profissional", desc: "Como ser visto como autoridade na sua região." },
               { Icon: Brain, title: "Mentalidade de crescimento", desc: "O mindset por trás dos profissionais de alto nível." },
               { Icon: Scissors, title: "Técnicas e tendências atuais", desc: "O que o mercado premium está exigindo agora." },
