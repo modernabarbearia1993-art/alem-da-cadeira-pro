@@ -15,6 +15,8 @@ import audience from "@/assets/audience.jpg";
 import logoAsset from "@/assets/logo-alem-da-cadeira.png.asset.json";
 import turmaCertificadosAsset from "@/assets/turma-certificados.png.asset.json";
 const turmaCertificados = turmaCertificadosAsset.url;
+import gabrielBarbeariaAsset from "@/assets/gabriel-barbearia.png.asset.json";
+const gabrielBarbearia = gabrielBarbeariaAsset.url;
 
 const logo = logoAsset.url;
 
