@@ -116,7 +116,7 @@ function Landing() {
       </div>
 
       {/* Nav */}
-      <header className="absolute top-8 md:top-16 inset-x-0 z-30">
+      <header className="absolute top-14 md:top-20 inset-x-0 z-30">
         <div className="mx-auto max-w-7xl px-4 md:px-6 flex items-center justify-between">
           <a href="#" className="flex items-center">
             <img src={logo} alt="Além da Cadeira" className="h-12 md:h-20 w-auto" />
