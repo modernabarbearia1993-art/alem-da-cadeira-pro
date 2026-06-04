@@ -329,6 +329,24 @@ function Landing() {
         </div>
       </section>
 
+      {/* EARNING POTENTIAL */}
+      <section className="relative py-16 md:py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="rounded-3xl border-2 border-gold bg-gradient-to-br from-gold/20 via-navy to-navy-deep p-8 md:p-12 text-center shadow-gold-glow">
+            <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">Projeção de faturamento</div>
+            <h3 className="font-display text-3xl md:text-5xl font-bold leading-tight mb-4">
+              Com sua primeira turma você pode faturar:
+            </h3>
+            <div className="text-4xl md:text-6xl font-display font-bold text-gradient-gold mb-3">
+              R$ 50 MIL A 100 MIL+
+            </div>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              Cobrando R$ 3.500 por aluno
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FOR WHO */}
       <section className="relative py-24 md:py-32 bg-gradient-to-b from-transparent via-navy-deep/40 to-transparent">
         <div className="mx-auto max-w-5xl px-6">
