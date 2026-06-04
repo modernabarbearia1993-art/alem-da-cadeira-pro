@@ -11,6 +11,8 @@ import founder from "@/assets/founder.jpg";
 import barberWork from "@/assets/barber-work.jpg";
 import audience from "@/assets/audience.jpg";
 import logoAsset from "@/assets/logo-alem-da-cadeira.png.asset.json";
+import turmaCertificadosAsset from "@/assets/turma-certificados.png.asset.json";
+const turmaCertificados = turmaCertificadosAsset.url;
 
 const logo = logoAsset.url;
 
@@ -526,7 +528,7 @@ function Landing() {
 
         <div className="mx-auto max-w-7xl px-6 mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[heroEvent, audience, barberWork, founder].map((img, i) => (
+            {[heroEvent, audience, turmaCertificados, founder].map((img, i) => (
               <div key={i} className="aspect-square rounded-2xl overflow-hidden border border-gold/20 hover:border-gold/60 transition group">
                 <img src={img} alt="" loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
               </div>
