@@ -703,7 +703,7 @@ function Landing() {
           <div className="font-display tracking-wider">
             ALÉM<span className="text-gold">.</span>DA<span className="text-gold">.</span>CADEIRA © 2026
           </div>
-          <div>Realização: Moderna Barbearia Escola · Gabriel Nascimento</div>
+          <div>Realização: Moderna Barbearia Escola · Gabriel Assunção</div>
         </div>
       </footer>
     </div>
