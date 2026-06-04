@@ -564,7 +564,7 @@ function Landing() {
 
         <div className="mx-auto max-w-7xl px-6 mt-16">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[gabrielBarbearia, audience, turmaCertificados, founder].map((img, i) => (
+            {[gabrielBarbearia, equipeCertificados, turmaCertificados, founder].map((img, i) => (
               <div key={i} className="aspect-square rounded-2xl overflow-hidden border border-gold/20 hover:border-gold/60 transition group">
                 <img src={img} alt="" loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition duration-700" />
               </div>
