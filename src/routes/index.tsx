@@ -607,10 +607,10 @@ function Landing() {
                 <div className="mt-6 space-y-2">
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-muted-foreground">Vagas restantes</span>
-                    <span className="font-bold text-gold">17 de 120</span>
+                    <span className="font-bold text-gold">48 de 120</span>
                   </div>
                   <div className="h-2 rounded-full bg-navy-deep overflow-hidden border border-border">
-                    <div className="h-full bg-gradient-to-r from-gold to-gold-soft" style={{ width: "86%" }} />
+                    <div className="h-full bg-gradient-to-r from-gold to-gold-soft" style={{ width: "40%" }} />
                   </div>
                 </div>
               </div>
