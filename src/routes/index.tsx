@@ -588,56 +588,104 @@ function Landing() {
 
             <div className="my-10 h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent" />
 
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-gold/15 border border-gold/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
-                  <Flame className="w-3 h-3" /> 1º Lote · Vagas limitadas
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 rounded-full bg-red-500/15 border border-red-500/40 px-4 py-2 text-xs uppercase tracking-[0.2em] text-red-400 font-bold">
+                <Flame className="w-3 h-3" /> Atenção: o 1º lote vai virar e o valor sobe para R$ 1.997
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Plano 1 - Sem hospedagem */}
+              <div className="rounded-2xl border border-gold/40 bg-navy-deep/60 p-6 md:p-8 flex flex-col">
+                <div className="inline-flex w-fit items-center gap-2 rounded-full bg-gold/15 border border-gold/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
+                  <Flame className="w-3 h-3" /> 1º Lote · Sem hospedagem
                 </div>
                 <div className="text-sm text-muted-foreground mb-2">Investimento à vista</div>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-2xl text-muted-foreground line-through">R$ 2.997</span>
+                  <span className="text-xl text-muted-foreground line-through">R$ 2.997</span>
                 </div>
                 <div className="flex items-baseline gap-2 mt-1">
-                  <span className="font-display text-5xl md:text-6xl font-bold text-gradient-gold">R$ 997,00</span>
+                  <span className="font-display text-4xl md:text-5xl font-bold text-gradient-gold">R$ 997,00</span>
                 </div>
                 <div className="mt-2 text-sm text-muted-foreground">
                   ou <span className="text-foreground font-semibold">12x de R$ 83,08</span> no cartão
                 </div>
 
-                <div className="mt-6 space-y-2">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-muted-foreground">Vagas restantes</span>
-                    <span className="font-bold text-gold">48 de 120</span>
-                  </div>
-                  <div className="h-2 rounded-full bg-navy-deep overflow-hidden border border-border">
-                    <div className="h-full bg-gradient-to-r from-gold to-gold-soft" style={{ width: "40%" }} />
-                  </div>
+                <div className="mt-6 space-y-2 flex-1">
+                  {[
+                    "Imersão presencial de 2 dias",
+                    "Acesso a todos os bônus exclusivos",
+                    "Certificado oficial",
+                    "Grupo de networking VIP",
+                    "Coffee break incluso",
+                  ].map((b) => (
+                    <div key={b} className="flex items-center gap-3 text-sm">
+                      <Check className="w-5 h-5 text-gold flex-shrink-0" />
+                      <span>{b}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6">
+                  <GoldButton href="#" className="w-full !py-4 !text-sm md:!text-base">
+                    Quero Participar <ArrowRight className="w-4 h-4" />
+                  </GoldButton>
                 </div>
               </div>
 
-              <div className="space-y-3">
-                {[
-                  "Imersão presencial de 2 dias",
-                  "Acesso a todos os bônus exclusivos",
-                  "Certificado oficial",
-                  "Grupo de networking VIP",
-                  "Coffee break incluso",
-                ].map((b) => (
-                  <div key={b} className="flex items-center gap-3 text-sm">
-                    <Check className="w-5 h-5 text-gold flex-shrink-0" />
-                    <span>{b}</span>
-                  </div>
-                ))}
+              {/* Plano 2 - Com hospedagem */}
+              <div className="relative rounded-2xl border-2 border-gold bg-gradient-to-br from-gold/10 via-navy-deep/60 to-navy-deep/60 p-6 md:p-8 flex flex-col shadow-gold-glow">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gold px-4 py-1 text-[10px] uppercase tracking-[0.2em] text-navy-deep font-bold whitespace-nowrap">
+                  Mais Completo
+                </div>
+                <div className="inline-flex w-fit items-center gap-2 rounded-full bg-gold/15 border border-gold/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
+                  <Flame className="w-3 h-3" /> 1º Lote · Com hospedagem
+                </div>
+                <div className="text-sm text-muted-foreground mb-2">Investimento à vista</div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-xl text-muted-foreground line-through">R$ 3.297</span>
+                </div>
+                <div className="flex items-baseline gap-2 mt-1">
+                  <span className="font-display text-4xl md:text-5xl font-bold text-gradient-gold">R$ 1.297,00</span>
+                </div>
+                <div className="mt-2 text-sm text-muted-foreground">
+                  ou <span className="text-foreground font-semibold">12x de R$ 108,08</span> no cartão
+                </div>
+
+                <div className="mt-6 space-y-2 flex-1">
+                  {[
+                    "Tudo do plano sem hospedagem",
+                    "Hospedagem no hotel inclusa",
+                    "Conforto e foco total no evento",
+                    "Networking estendido com os participantes",
+                  ].map((b) => (
+                    <div key={b} className="flex items-center gap-3 text-sm">
+                      <Check className="w-5 h-5 text-gold flex-shrink-0" />
+                      <span>{b}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mt-6">
+                  <GoldButton href="#" className="w-full !py-4 !text-sm md:!text-base animate-pulse-gold">
+                    Quero Vaga + Hotel <ArrowRight className="w-4 h-4" />
+                  </GoldButton>
+                </div>
               </div>
             </div>
 
-            <div className="mt-10 flex justify-center">
-              <GoldButton href="#" className="w-full md:w-auto !px-8 md:!px-14 !py-5 md:!py-6 !text-base md:!text-lg animate-pulse-gold">
-                Quero Participar do Além da Cadeira <ArrowRight className="w-5 h-5" />
-              </GoldButton>
+            <div className="mt-8 space-y-2">
+              <div className="flex items-center justify-between text-sm">
+                <span className="text-muted-foreground">Vagas restantes</span>
+                <span className="font-bold text-gold">48 de 120</span>
+              </div>
+              <div className="h-2 rounded-full bg-navy-deep overflow-hidden border border-border">
+                <div className="h-full bg-gradient-to-r from-gold to-gold-soft" style={{ width: "40%" }} />
+              </div>
             </div>
+
             <p className="mt-5 text-center text-xs text-muted-foreground">
-              🔒 Compra 100% segura · Parcelamento em até 12x
+              🔒 Compra 100% segura · Parcelamento em até 12x · Após o fim do 1º lote o valor sobe para R$ 1.997
             </p>
           </div>
         </div>
