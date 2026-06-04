@@ -360,7 +360,7 @@ function Landing() {
                 {[
                   "Mais confiança.",
                   "Mais posicionamento.",
-                  "Mais clientes.",
+                  "Mais fontes de renda.",
                   "Mais faturamento.",
                   "Mais oportunidades.",
                   "Mais visão de negócio.",
