@@ -413,7 +413,7 @@ function Landing() {
           <div className="md:col-span-2 relative">
             <div className="absolute -inset-6 bg-gold/15 blur-3xl rounded-full" />
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-gold/40 shadow-elevated">
-              <img src={founder} alt="Gabriel Nascimento, fundador" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={founder} alt="Gabriel Assunção, fundador" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
             </div>
           </div>
