@@ -743,7 +743,7 @@ function Landing() {
             {[
               { q: "Quanto dura o evento?", a: "2 dias presenciais, com programação completa do início ao fim." },
               { q: "Preciso ser barbeiro experiente?", a: "Não. O conteúdo é estruturado para iniciantes e profissionais experientes." },
-              { q: "Recebo certificado?", a: "Sim. Você recebe certificado oficial de participação." },
+              { q: "Recebo certificado?", a: "Sim. Você receberá um certificado oficial de participação, reconhecendo sua capacitação nos fundamentos do Barbeiro Educador, incluindo técnicas de ensino, desenvolvimento profissional e formação de novos barbeiros." },
               { q: "Posso parcelar?", a: "Sim, em até 12x no cartão de crédito." },
               { q: "Onde será realizado?", a: "São Paulo - SP. Local exato enviado por e-mail após confirmação da inscrição." },
             ].map((f, i) => (
