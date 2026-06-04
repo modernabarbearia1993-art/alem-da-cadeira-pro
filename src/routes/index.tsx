@@ -17,6 +17,8 @@ import turmaCertificadosAsset from "@/assets/turma-certificados.png.asset.json";
 const turmaCertificados = turmaCertificadosAsset.url;
 import gabrielBarbeariaAsset from "@/assets/gabriel-barbearia.png.asset.json";
 const gabrielBarbearia = gabrielBarbeariaAsset.url;
+import ingressoAsset from "@/assets/ingresso.png.asset.json";
+const ingresso = ingressoAsset.url;
 
 const logo = logoAsset.url;
 
@@ -35,16 +37,17 @@ export const Route = createFileRoute("/")({
 
 function Countdown() {
   const target = new Date("2026-08-02T09:00:00-03:00").getTime();
-  const [now, setNow] = useState(Date.now());
+  const [now, setNow] = useState<number | null>(null);
   useEffect(() => {
+    setNow(Date.now());
     const id = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(id);
   }, []);
-  const diff = Math.max(0, target - now);
-  const d = Math.floor(diff / 86400000);
-  const h = Math.floor((diff / 3600000) % 24);
-  const m = Math.floor((diff / 60000) % 60);
-  const s = Math.floor((diff / 1000) % 60);
+  const diff = now === null ? 0 : Math.max(0, target - now);
+  const d = now === null ? 0 : Math.floor(diff / 86400000);
+  const h = now === null ? 0 : Math.floor((diff / 3600000) % 24);
+  const m = now === null ? 0 : Math.floor((diff / 60000) % 60);
+  const s = now === null ? 0 : Math.floor((diff / 1000) % 60);
   const items = [
     { v: d, l: "Dias" }, { v: h, l: "Horas" }, { v: m, l: "Min" }, { v: s, l: "Seg" },
   ];
@@ -113,10 +116,10 @@ function Landing() {
       </div>
 
       {/* Nav */}
-      <header className="absolute top-8 inset-x-0 z-30">
-        <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
+      <header className="absolute top-8 md:top-16 inset-x-0 z-30">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 flex items-center justify-between">
           <a href="#" className="flex items-center">
-            <img src={logo} alt="Além da Cadeira" className="h-14 md:h-20 w-auto" />
+            <img src={logo} alt="Além da Cadeira" className="h-12 md:h-20 w-auto" />
           </a>
           <GhostButton href="#oferta" className="hidden md:inline-flex">Garantir Vaga</GhostButton>
         </div>
@@ -141,14 +144,14 @@ function Landing() {
         <div className="absolute top-1/4 right-10 w-72 h-72 rounded-full bg-gold/10 blur-3xl animate-float-slow" />
         <div className="absolute bottom-10 left-10 w-96 h-96 rounded-full bg-navy/40 blur-3xl" />
 
-        <div className="relative z-10 mx-auto max-w-7xl px-6 w-full">
+        <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-6 w-full">
           <div className="max-w-4xl animate-fade-up">
-            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-navy-deep/60 backdrop-blur px-4 py-2 text-[11px] uppercase tracking-[0.25em] text-gold mb-8">
+            <div className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-navy-deep/60 backdrop-blur px-3 md:px-4 py-2 text-[10px] md:text-[11px] uppercase tracking-[0.2em] md:tracking-[0.25em] text-gold mb-6 md:mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse-gold" />
               Imersão Presencial · Edição 2026
             </div>
 
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight">
+            <h1 className="font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight">
               EXISTE UM
               <br />
               <span className="shine-text">NÍVEL ACIMA</span>
@@ -156,7 +159,7 @@ function Landing() {
               DA CADEIRA
             </h1>
 
-            <p className="mt-8 text-lg md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
+            <p className="mt-6 md:mt-8 text-base md:text-2xl text-muted-foreground max-w-2xl leading-relaxed">
               Você aprendeu a cortar cabelo.
               <br />
               <span className="text-foreground">
@@ -164,23 +167,32 @@ function Landing() {
               </span>
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            {/* Ticket image */}
+            <div className="mt-8 md:mt-10 max-w-xl animate-fade-up">
+              <img
+                src={ingresso}
+                alt="Ingresso Além da Cadeira"
+                className="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] rotate-[-2deg] hover:rotate-0 transition-transform duration-500"
+              />
+            </div>
+
+            <div className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
               <GoldButton href="#oferta">
                 Quero Participar <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </GoldButton>
               <GhostButton href="#oferta">Garantir Minha Vaga</GhostButton>
             </div>
 
-            <div className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
+            <div className="mt-10 md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-3xl">
               {[
                 { Icon: Calendar, label: "02 e 03 de Agosto" },
                 { Icon: MapPin, label: "São Paulo · SP" },
                 { Icon: Ticket, label: "Vagas Limitadas" },
                 { Icon: Users, label: "Evento Presencial" },
               ].map(({ Icon, label }) => (
-                <div key={label} className="flex items-center gap-3 rounded-xl border border-gold/20 bg-navy-deep/50 backdrop-blur px-4 py-3">
-                  <Icon className="w-5 h-5 text-gold flex-shrink-0" />
-                  <span className="text-sm font-medium">{label}</span>
+                <div key={label} className="flex items-center gap-2 md:gap-3 rounded-xl border border-gold/20 bg-navy-deep/50 backdrop-blur px-3 md:px-4 py-3">
+                  <Icon className="w-4 h-4 md:w-5 md:h-5 text-gold flex-shrink-0" />
+                  <span className="text-xs md:text-sm font-medium">{label}</span>
                 </div>
               ))}
             </div>
