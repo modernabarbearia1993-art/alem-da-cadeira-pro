@@ -432,10 +432,10 @@ function Landing() {
           </h2>
           <div className="mt-12 grid md:grid-cols-2 gap-5 text-left">
             {[
-              "Perder clientes por falta de posicionamento.",
-              "Trabalhar muito e ganhar pouco.",
-              "Continuar dependendo apenas da cadeira.",
-              "Adiar seus sonhos por mais um ano.",
+              "Continuar trocando tempo por dinheiro sem construir algo maior.",
+              "Ver outros profissionais crescerem enquanto você permanece no mesmo lugar.",
+              "Trabalhar cada vez mais e continuar sem liberdade financeira.",
+              "Chegar ao próximo ano exatamente onde está hoje.",
             ].map((t) => (
               <div key={t} className="flex items-start gap-4 rounded-2xl border border-destructive/30 bg-card/60 p-6">
                 <div className="w-10 h-10 rounded-full bg-destructive/15 flex items-center justify-center flex-shrink-0">
