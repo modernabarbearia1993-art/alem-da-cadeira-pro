@@ -215,13 +215,13 @@ function Landing() {
 
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              "Você trabalha muito e ganha menos do que deveria.",
-              "Sente que, quanto mais clientes consegue, mais preso fica na cadeira.",
-              "Vive dependente apenas da cadeira.",
-              "Não sabe precificar seus serviços.",
-              "Não entende de marketing.",
-              "Tem talento, mas ninguém conhece seu trabalho.",
-              "Sente que está estagnado.",
+              "Você trabalha cada vez mais, mas sua renda continua limitada ao número de horários disponíveis.",
+              "Sente que sua profissão depende exclusivamente da sua presença física.",
+              "Sonha em crescer, mas não sabe qual é o próximo passo.",
+              "Tem talento, mas ainda não construiu autoridade no mercado.",
+              "Vê outros profissionais crescendo e não entende o que eles fazem de diferente.",
+              "Quer conquistar mais liberdade financeira sem abandonar a profissão que ama.",
+              "Sabe que nasceu para algo maior, mas ainda não encontrou o caminho.",
             ].map((pain, i) => (
               <div
                 key={i}
