@@ -14,7 +14,7 @@ import audience from "@/assets/audience.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Além da Cadeira — Imersão Presencial para Barbeiros | Gabriel Nascimento" },
+      { title: "Além da Cadeira — Imersão Presencial para Barbeiros | Gabriel Assunção" },
       { name: "description", content: "Imersão presencial de 2 dias em São Paulo. Aprenda a construir autoridade, aumentar faturamento e transformar sua barbearia em um negócio de verdade." },
       { property: "og:title", content: "Além da Cadeira — Imersão Presencial" },
       { property: "og:description", content: "02 e 03 de Agosto, São Paulo. Vagas limitadas." },
@@ -413,28 +413,38 @@ function Landing() {
           <div className="md:col-span-2 relative">
             <div className="absolute -inset-6 bg-gold/15 blur-3xl rounded-full" />
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-gold/40 shadow-elevated">
-              <img src={founder} alt="Gabriel Nascimento, fundador" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
+              <img src={founder} alt="Gabriel Assunção, fundador" loading="lazy" width={1024} height={1024} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/80 via-transparent to-transparent" />
             </div>
           </div>
           <div className="md:col-span-3">
             <div className="text-xs uppercase tracking-[0.3em] text-gold mb-4">O Fundador</div>
             <h2 className="font-display text-4xl md:text-5xl font-bold leading-tight">
-              QUEM É <span className="text-gradient-gold">GABRIEL NASCIMENTO</span>?
+              QUEM É <span className="text-gradient-gold">GABRIEL ASSUNÇÃO</span>?
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Gabriel Nascimento é barbeiro, empreendedor e fundador da <span className="text-foreground font-semibold">Moderna Barbearia Escola</span>.
-              Ao longo de sua trajetória, ajudou a formar centenas de profissionais e impactou milhares de pessoas através da educação.
+              Barbeiro, educador e empreendedor, Gabriel Assunção é fundador da <span className="text-foreground font-semibold">Moderna Barbearia Escola</span> e criador do movimento Além da Cadeira.
             </p>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+              Ao longo de sua trajetória, ajudou a transformar a vida de centenas de profissionais através da educação, formando barbeiros dentro e fora do Brasil e mostrando que existe um caminho além da execução técnica.
+            </p>
+            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+              Hoje, lidera uma das escolas de barbeiros mais ativas da região, onde são realizados mais de 5.000 atendimentos gratuitos por ano, proporcionando experiência prática real para alunos e oportunidades para a comunidade.
+            </p>
+            <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+              Sua missão é ajudar barbeiros a desenvolver não apenas habilidades técnicas, mas também posicionamento, mentalidade, autoridade e visão de negócio para construir uma carreira sólida e duradoura.
+            </p>
+            <div className="mt-8 space-y-3">
               {[
-                { n: "5.000+", l: "Atendimentos gratuitos por ano" },
-                { n: "Milhares", l: "Seguidores acompanhando" },
-                { n: "100+", l: "Profissionais formados" },
-              ].map((s) => (
-                <div key={s.l} className="rounded-2xl border border-gold/30 bg-card/60 p-5">
-                  <div className="font-display text-3xl font-bold text-gradient-gold">{s.n}</div>
-                  <div className="mt-1 text-xs text-muted-foreground leading-snug">{s.l}</div>
+                { Icon: Award, text: "Mais de uma década transformando profissionais" },
+                { Icon: Scissors, text: "Escola com milhares de atendimentos práticos realizados" },
+                { Icon: GraduationCap, text: "Formação de barbeiros dentro e fora do Brasil" },
+                { Icon: Rocket, text: "Especialista em transformar barbeiros em profissionais de referência" },
+                { Icon: Mic, text: "Criador do método Além da Cadeira" },
+              ].map(({ Icon, text }, i) => (
+                <div key={i} className="flex items-center gap-3 text-base">
+                  <Icon className="w-5 h-5 text-gold flex-shrink-0" />
+                  <span>{text}</span>
                 </div>
               ))}
             </div>
