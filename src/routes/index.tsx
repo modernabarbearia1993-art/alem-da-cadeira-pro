@@ -359,6 +359,7 @@ function Landing() {
             {[
               "Barbeiros iniciantes",
               "Barbeiros profissionais",
+              "Barbeiros que trabalham para alguém",
               "Proprietários de barbearias",
               "Quem deseja aumentar o faturamento",
               "Quem deseja se destacar no mercado",
