@@ -754,7 +754,7 @@ function Landing() {
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
           <img src={logo} alt="Além da Cadeira" className="h-16 w-auto" />
-          <div>Realização: Moderna Barbearia Escola · Gabriel Assunção © 2026</div>
+          <div>Realização: Moderna Barbearia · Gabriel Assunção © 2026</div>
         </div>
       </footer>
     </div>
