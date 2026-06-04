@@ -191,10 +191,10 @@ function Landing() {
           <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               "Você trabalha muito e ganha menos do que deveria.",
-              "Não consegue atrair clientes de forma constante.",
+              "Sente que, quanto mais clientes consegue, mais preso fica na cadeira.",
               "Vive dependente apenas da cadeira.",
               "Não sabe precificar seus serviços.",
-              "Não entende marketing.",
+              "Não entende de marketing.",
               "Tem talento, mas ninguém conhece seu trabalho.",
               "Sente que está estagnado.",
             ].map((pain, i) => (
