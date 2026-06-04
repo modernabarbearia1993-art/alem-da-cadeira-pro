@@ -590,18 +590,18 @@ function Landing() {
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 rounded-full bg-destructive/15 border border-destructive/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-destructive font-bold mb-4">
-                  <Flame className="w-3 h-3" /> 2º Lote · Últimas vagas
+                <div className="inline-flex items-center gap-2 rounded-full bg-gold/15 border border-gold/40 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-gold font-bold mb-4">
+                  <Flame className="w-3 h-3" /> 1º Lote · Vagas limitadas
                 </div>
                 <div className="text-sm text-muted-foreground mb-2">Investimento à vista</div>
                 <div className="flex items-baseline gap-2">
                   <span className="text-2xl text-muted-foreground line-through">R$ 2.997</span>
                 </div>
                 <div className="flex items-baseline gap-2 mt-1">
-                  <span className="font-display text-5xl md:text-6xl font-bold text-gradient-gold">R$ 1.997</span>
+                  <span className="font-display text-5xl md:text-6xl font-bold text-gradient-gold">R$ 997,00</span>
                 </div>
                 <div className="mt-2 text-sm text-muted-foreground">
-                  ou <span className="text-foreground font-semibold">12x de R$ 197,80</span> no cartão
+                  ou <span className="text-foreground font-semibold">12x de R$ 83,08</span> no cartão
                 </div>
 
                 <div className="mt-6 space-y-2">
