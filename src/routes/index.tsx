@@ -291,7 +291,7 @@ function Landing() {
           <p className="mt-6 text-xl md:text-2xl leading-relaxed">
             Aqui você não aprenderá apenas cortes.
             <br />
-            Você aprenderá a construir uma carreira <span className="text-gradient-gold font-bold">sólida, lucrativa e respeitada.</span>
+            Você aprenderá a construir uma carreira <span className="text-gradient-gold font-bold">sólida, lucrativa e respeitada, ensinando outras pessoas.</span>
           </p>
         </div>
       </section>
