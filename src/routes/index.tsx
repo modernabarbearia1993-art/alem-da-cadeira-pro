@@ -14,7 +14,7 @@ import audience from "@/assets/audience.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Além da Cadeira — Imersão Presencial para Barbeiros | Gabriel Nascimento" },
+      { title: "Além da Cadeira — Imersão Presencial para Barbeiros | Gabriel Assunção" },
       { name: "description", content: "Imersão presencial de 2 dias em São Paulo. Aprenda a construir autoridade, aumentar faturamento e transformar sua barbearia em um negócio de verdade." },
       { property: "og:title", content: "Além da Cadeira — Imersão Presencial" },
       { property: "og:description", content: "02 e 03 de Agosto, São Paulo. Vagas limitadas." },
