@@ -10,6 +10,9 @@ import heroEvent from "@/assets/hero-event.jpg";
 import founder from "@/assets/founder.jpg";
 import barberWork from "@/assets/barber-work.jpg";
 import audience from "@/assets/audience.jpg";
+import logoAsset from "@/assets/logo-alem-da-cadeira.png.asset.json";
+
+const logo = logoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -106,9 +109,9 @@ function Landing() {
       {/* Nav */}
       <header className="absolute top-8 inset-x-0 z-30">
         <div className="mx-auto max-w-7xl px-6 flex items-center justify-between">
-          <div className="font-display text-lg md:text-xl font-bold tracking-wider">
-            ALÉM<span className="text-gold">.</span>DA<span className="text-gold">.</span>CADEIRA
-          </div>
+          <a href="#" className="flex items-center">
+            <img src={logo} alt="Além da Cadeira" className="h-14 md:h-20 w-auto" />
+          </a>
           <GhostButton href="#oferta" className="hidden md:inline-flex">Garantir Vaga</GhostButton>
         </div>
       </header>
@@ -748,10 +751,8 @@ function Landing() {
       {/* FOOTER */}
       <footer className="border-t border-border py-10">
         <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-          <div className="font-display tracking-wider">
-            ALÉM<span className="text-gold">.</span>DA<span className="text-gold">.</span>CADEIRA © 2026
-          </div>
-          <div>Realização: Moderna Barbearia Escola · Gabriel Assunção</div>
+          <img src={logo} alt="Além da Cadeira" className="h-16 w-auto" />
+          <div>Realização: Moderna Barbearia Escola · Gabriel Assunção © 2026</div>
         </div>
       </footer>
     </div>
