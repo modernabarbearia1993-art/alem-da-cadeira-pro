@@ -9,7 +9,8 @@ import {
 import heroEvent from "@/assets/hero-event.jpg";
 import founderAsset from "@/assets/gabriel-palco.png.asset.json";
 const founder = founderAsset.url;
-import barberWork from "@/assets/barber-work.jpg";
+import barberWorkAsset from "@/assets/equipe-tecnica-negocio.png.asset.json";
+const barberWork = barberWorkAsset.url;
 import audience from "@/assets/audience.jpg";
 import logoAsset from "@/assets/logo-alem-da-cadeira.png.asset.json";
 import turmaCertificadosAsset from "@/assets/turma-certificados.png.asset.json";
