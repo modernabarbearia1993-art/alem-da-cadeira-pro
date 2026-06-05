@@ -125,7 +125,7 @@ function Landing() {
           <a href="#" className="flex items-center">
             <img src={logo} alt="Além da Cadeira" className="h-12 md:h-20 w-auto" />
           </a>
-          <GhostButton href="https://pay.cakto.com.br/s4xzuwy_913906" className="hidden md:inline-flex">Garantir Vaga</GhostButton>
+          <GhostButton href="#oferta" className="hidden md:inline-flex">Garantir Vaga</GhostButton>
         </div>
       </header>
 
@@ -181,10 +181,10 @@ function Landing() {
             </div>
 
             <div className="mt-10 md:mt-12 flex flex-col sm:flex-row gap-3 md:gap-4">
-              <GoldButton href="https://pay.cakto.com.br/s4xzuwy_913906">
+              <GoldButton href="#oferta">
                 Quero Participar <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </GoldButton>
-              <GhostButton href="https://pay.cakto.com.br/s4xzuwy_913906">Garantir Minha Vaga</GhostButton>
+              <GhostButton href="#oferta">Garantir Minha Vaga</GhostButton>
             </div>
 
             <div className="mt-10 md:mt-14 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-3xl">
@@ -782,7 +782,7 @@ function Landing() {
             Ou pode decidir <span className="text-gold font-semibold">evoluir, aprender novas estratégias e descobrir que existe um nível acima da cadeira.</span>
           </p>
           <div className="mt-12">
-            <GoldButton href="https://pay.cakto.com.br/s4xzuwy_913906" className="!px-10 md:!px-14 !py-5 md:!py-6 !text-base md:!text-lg animate-pulse-gold">
+            <GoldButton href="#oferta" className="!px-10 md:!px-14 !py-5 md:!py-6 !text-base md:!text-lg animate-pulse-gold">
               🔥 Garantir Minha Vaga Agora <ArrowRight className="w-5 h-5" />
             </GoldButton>
           </div>
