@@ -711,7 +711,7 @@ function Landing() {
                 </div>
 
                 <div className="mt-6">
-                  <GoldButton href="https://pay.cakto.com.br/s4xzuwy_913906" className="w-full !py-4 !text-sm md:!text-base animate-pulse-gold">
+                  <GoldButton href="https://pay.cakto.com.br/8hpdcqs_914563" className="w-full !py-4 !text-sm md:!text-base animate-pulse-gold">
                     Quero Vaga + Hotel <ArrowRight className="w-4 h-4" />
                   </GoldButton>
                 </div>
