@@ -649,10 +649,10 @@ function Landing() {
                   <span className="text-xl text-muted-foreground line-through">R$ 2.997</span>
                 </div>
                 <div className="flex items-baseline gap-2 mt-1">
-                  <span className="font-display text-4xl md:text-5xl font-bold text-gradient-gold">R$ 997,00</span>
+                  <span className="font-display text-4xl md:text-5xl font-bold text-gradient-gold">R$ 497,00</span>
                 </div>
                 <div className="mt-2 text-sm text-muted-foreground">
-                  ou <span className="text-foreground font-semibold">12x de R$ 83,08</span> no cartão
+                  ou <span className="text-foreground font-semibold">12x de R$ 41,42</span> no cartão
                 </div>
 
                 <div className="mt-6 space-y-2 flex-1">
